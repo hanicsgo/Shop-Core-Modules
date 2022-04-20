@@ -342,3 +342,12 @@ public void Event_RoundMVP(Event event, char[] name, bool dontBroadcast)
 		EmitSoundToClient(i, g_sSound[g_iEquipt[client]], SOUND_FROM_PLAYER, SNDCHAN_STATIC, SNDLEVEL_NONE, _, g_fVolume[g_iEquipt[client]]);
 	}
 }
+public void Shop_SetCallbacks(int client, CategoryId category_id, const char[] category, ItemId item_id, const char[] item)
+{
+	if (!StrEqual(type, "mvp_sound"))
+		return;
+
+	EmitSoundToClient(client, g_sSound[index], client, SNDCHAN_AUTO, SNDLEVEL_NORMAL, SND_NOFLAGS, g_fVolume[index] / 2);
+
+	CPrintToChat(client, "%s%t", g_sChatPrefix, "Play Preview", client);
+}
