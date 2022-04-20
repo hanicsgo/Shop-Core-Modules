@@ -24,7 +24,7 @@ bool g_bUseMVP[MAXPLAYERS+1];
 public Plugin myinfo = 
 {
 	name = "Shop - MVP sound item module",
-	author = "hani anhemyenbai.com", 
+	author = "hani", 
 	description = "MVP sound item",
 	version = "1.0",
 	url = ""
