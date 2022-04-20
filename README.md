@@ -19,8 +19,7 @@ For SQLite usage, **shop supports MySQL and recommended to use**
 - [Steamworks](https://forums.alliedmods.net/showthread.php?t=229556)
 
 ## Installation
-- Extract archive from [Releases](../../releases) page to server directory
-- (Optional) Setup sorting if you need (create a file `addons/sourcemod/configs/shop/shop_sort.txt` and add categories.
+- (Optional) Setup sorting if you need (create a file `addons/sourcemod/configs/shop/shop_setting.txt` and add categories.
 
 ## Modules
 - Daily Credits ( by Simon & Nachtfrische, Snooze )
