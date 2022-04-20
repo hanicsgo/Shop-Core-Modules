@@ -1,0 +1,14 @@
+"Credits info"
+{
+    "Hud Color Add Credits"         "0 255 0 255"        // RGBA;   Цвет худа если кредиты были добавлены
+    "Hud Color Take Credits"        "255 0 0 255"        // RGBA;   Цвет худа если кредиты были отняты
+    "Hud Position"                  "0.01 0.01"          // float;  Позиция худа XY
+    "Hud Draw Time"                 "3.0"                // float;  Время показа худа
+    "Clean Credits History Time"    "1.0"                // float;  Время очистки худа
+
+    "Enable Cookie"                 "1"                  // bool;   Включена ли возможность выключить худ в меню настроек (!settings)?
+    "Command On Off Display Hud"    "sm_show_credits"    // String; Команда на вкл/выкл отображения худа. Если пустая строка, то не будет регистрации команды.
+    "Block On Off Command"          "0"                  // bool;   Блокировать ли команду вкл/выкл отображения худа "Enable Cookie" равна нулю?
+    "Def Cookie State"              "1"                  // bool;   Изначальное положение худа при первом входе игрока
+}
+

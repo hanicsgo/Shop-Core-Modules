@@ -1,0 +1,42 @@
+"Phrases"
+{
+	"Credits"
+	{
+		"#format"		"{1:i},{2:s},{3:i},{4:s}"
+		// {1} - текущая сумма кредитов до пополнения
+		// {2} - сколько добавилось/отнялось, с учётом истории
+		// {3} - текущая сумма кредитов после пополнения
+		// {4} - сколько добавилось/отнялось, без учёта истории
+		
+		"ru"			"{4} кредитов (Всего {3})"
+		"en"			"{4} credits (Total {3})"
+	}
+
+	"Plus"
+	{
+		"ru"			"+"
+		"en"			"+"
+	}
+	"Minus"
+	{
+		"ru"			"-"
+		"en"			"-"
+	}
+	"Menu. Toggle Hud"
+	{
+		"#format"		"{1:t}"
+		
+		"ru"			"[ {1} ] Отображение худа изменения кредитов"
+		"en"			"[ {1} ] Displaying the hud credit change"
+	}
+	"Reply. Toggle On"
+	{
+		"ru"			"[{GREEN}Shop{DEFAULT}] Худ успешно {GREEN}включён{DEFAULT}!"
+		"en"			"[{GREEN}Shop{DEFAULT}] Hud successfully {GREEN}turned on{DEFAULT}!"
+	}
+	"Reply. Toggle Off"
+	{
+		"ru"			"[{GREEN}Shop{DEFAULT}] Худ успешно {RED}выключен{DEFAULT}!"
+		"en"			"[{GREEN}Shop{DEFAULT}] Hud successfully {RED}turned off{DEFAULT}!"
+	}
+}

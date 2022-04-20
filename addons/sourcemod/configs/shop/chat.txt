@@ -1,0 +1,209 @@
+"Chat"
+{
+	"name_color_name"			"Nickname Color"		
+	"name_color_description"	""				
+	"name_color_enable"			"1"				
+
+	"text_color_name"			"Text Color"	
+	"text_color_description"	""				
+	"text_color_enable"			"1"				
+
+	"prefix_color_name"			"Prefix Color"	
+	"prefix_color_description"	""				
+	"prefix_color_enable"		"1"				
+
+	"prefix_name"				"Prefix"		
+	"prefix_description"		""				
+	"prefix_enable"				"1"				
+	
+	"ignore_chat_triggers"		"1"				
+
+	"Colors"
+	{
+		"greenclr"
+		{
+			"color"  		"{GREEN}" 	
+			"name"			"Зеленый" 	
+			"price"  		"200"  		
+			"sellprice" 	"100"  		
+			"duration"  	"3600"  	
+		}
+		"teamclr"
+		{
+			"color"			"{TEAM}"	
+			"name"			"Командный"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"whiteclr"
+		{
+			"color"			"{DEFAULT}"	
+			"name"			"Белый"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"blueclr"
+		{
+			"color"			"{BLUE}"	
+			"name"			"Синий"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"lblueclr"
+		{
+			"color"			"{LIGHTBLUE}"	
+			"name"			"Светло-синий"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"pinkclr"
+		{
+			"color"			"{PURPLE}"	
+			"name"			"Розовый"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"oliveclr"
+		{
+			"color"			"{OLIVE}"	
+			"name"			"Оливковый"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"yellowclr"
+		{
+			"color"			"{LIGHTOLIVE}"	
+			"name"			"Желтый"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"grayclr"
+		{
+			"color"			"{GRAY}"	
+			"name"			"Серый"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"lredclr"
+		{
+			"color"			"{LIGHTRED}"	
+			"name"			"Светло-красный"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"lgreenclr"
+		{
+			"color"			"{LIGHTGREEN}"	
+			"name"			"Кислотный"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"limeclr"
+		{
+			"color"			"{LIME}"	
+			"name"			"Лаймовый"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"redclr"
+		{
+			"color"			"{RED}"
+			"name"			"Красный"
+			"price"			"200"
+			"sellprice"		"100"
+			"duration"		"3600"
+		}
+	}
+	"Prefixes"
+	{
+		"custom"
+		{
+			"tag"			"custom"	
+			"name"			"Пользовательский"	
+			"price"			"200"		
+			"sellprice"		"100"	
+			"duration"		"3600"		
+		}
+		"tag1"
+		{
+			"tag"			"[DONATOR]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag2"
+		{
+			"tag"			"[HACKER]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag3"
+		{
+			"tag"			"[KILLER]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag4"
+		{
+			"tag"			"[2K16]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag5"
+		{
+			"tag"			"[Принцесса]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag6"
+		{
+			"tag"			"[АННИГИЛЯТОР]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag7"
+		{
+			"tag"			"[ЗАДРОТ]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag8"
+		{
+			"tag"			"[Мистер]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag9"
+		{
+			"tag"			"[Мисс]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+		"tag10"
+		{
+			"tag"			"[НиЧоСи]"	
+			"price"			"200"		
+			"sellprice"		"100"		
+			"duration"		"3600"		
+		}
+	}
+}

@@ -1,0 +1,72 @@
+"Phrases"
+{
+	"CreditsRecieved"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[Shop]{default} You just received {green}{1} daily credits!{default} Come back tomorrow to get a bigger amount of credits."
+		"fr"		"{green}[Shop]{default} Tu viens de recevoir {green}{1} de crédits quotidiens!{default} Revient demain pour obtenir une plus grande quantité de crédits."
+		"ru"		"{green}[Shop]{default} Вы только что получили {green}{1}ежедневных кредитов!{Default} Вернитесь завтра, чтобы получить еще больше кредитов."
+		"de"        	"{green}[Shop]{default} Du hast soeben {green}{1} tägliche Credits erhalten!{default} Komm morgen wieder, um eine größere Menge an Credits zu erhalten."
+	}
+	
+	"LastCreditsRecieved"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[Shop]{default} You just received {green}{1} daily credits!{default}"
+		"fr"		"{green}[Shop]{default} Tu viens de recevoir {green}{1} Crédits quotidiens!{default}"
+		"ru"		"{green}[Shop]{default} Вы только что получили {green}{1} ежедневных кредитов!{Default}"
+		"de"        	"{green}[Shop]{default} Du hast soeben deine {green}{1} täglichen Credits{default} erhalten!"
+	}
+	
+	"BackTomorrow"
+	{
+		"en"		"{green}[Shop]{default} You have already received your daily credits for today. Try again tomorrow."
+		"fr"		"{green}[Shop]{default} Tu as déja reçu des credits quotidiens pour aujourd'hui. Ressayer demain."
+		"ru"		"{green}[Shop]{default} Вы уже получили ежедневные кредиты на сегодня. Попробуй снова завтра."
+		"de"		"{green}[Shop]{default} Du hast deine täglichen Credits für heute bereits erhalten. Versuchen es morgen erneut."
+	}
+	
+	"StreakEnded"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[Shop]{default} Your daily credit streak of {green}{1} days{default} ended!"
+		"fr"		"{green}[Shop]{default} Votre série de credits quotidiens se fini dans {green}{1} jour{default}!"
+		"ru"		"{green}[Shop]{default} Ваша дневная кредитная серия на {green}{1} дн.{Default} закончилась!"
+		"de"		"{green}[Shop]{default} Dein tägliches Guthaben von {green}{1} Tagen{default} ist beendet!"
+	}	
+	
+	"CurrentDay"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[Shop]{default} You are currently on day {green}{1}{default} of your daily credit streak!"
+		"fr"		"{green}[Shop]{default} Tu es actuellement au jour {green}{1}{default de ta serie de credits!"
+		"ru"		"{green}[Shop]{default} В настоящее время у вас наступает {green}{1}{default} день вашей ежедневной кредитной серии!"
+		"de"		"{green}[Shop]{default} Du befindest dich derzeit am Tag {green}{1}{default} deines täglichen Credits Guthaben"
+	}
+	
+	"ResetDays"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[Shop]{default} Congratulations, you've reached the highest possible streak of {green}{1} days{default}. Return tomorrow to start a new streak and collect more credits!"
+		"fr"		"{green}[Shop]{default} Félicitation, Tu as atteint la plus grande récompense au bout du {green}{1} jour {default}. Revient demain pour recommencer une nouvelle serie de crédits et avoir plus de credits!"
+		"ru"		"{green}[Shop]{default} Поздравляем, вы достигли максимально возможной серии из {green}{1} дней {default}. Вернитесь завтра, чтобы начать новую серию и собрать больше кредитов!"
+		"de"		"{green}[Shop]{default} Glückwunsch, du hast eben den höchstmöglichen Strike von {green}{1} Tagen{default} erhalten. Kehre morgen zurück, um eine neue Serie zu starten um mehr Credits zu sammeln!"
+	}
+	
+	"CookieError"
+	{
+		"en"		"{green}[Shop]{default} {red}Error{default} receiving daily credits. Invalid cookie!"
+		"fr"		"{green}[Shop]{default} {red}Erreur{default} Recevoir des crédits quotidiens. Cookie invalide!"
+		"ru"		"{green}[Shop]{default} {red}Ошибка{default} при получении ежедневных кредитов. Недействительный файл cookie!"
+		"de"		"{green}[Shop]{default} {red}Fehler{default} tägliche Gutschriften erhalten. Ungültiges Cookie!"
+	}
+	
+	"WaitForInterval"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[Shop]{default} You need to play on the server for {green}{1} more minutes{default} to be able to receive your daily credits!"
+		"fr"		"{green}[Shop]{default} Tu dois jouer {green}{1}{default} minutes de plus pour pouvoir recevoir tes crédits quotidiens !"
+		"ru"		"{green}[Shop]{default} Вам нужно поиграть на сервере еще {green}{1} минут{default}, чтобы иметь возможность получать ежедневные кредиты!"
+		"de"		"{green}[Shop]{default} Du musst mehr als {green}{1} Minuten{default} auf dem Server spielen um deine täglichen Credits erhalten zu können!"
+	}	
+}

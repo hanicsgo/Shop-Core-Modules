@@ -1,0 +1,49 @@
+﻿// SKIN MINI
+models/player/custom_player/lol/jhin/jhin.dx90.vtx
+models/player/custom_player/lol/jhin/jhin.mdl
+models/player/custom_player/lol/jhin/jhin.phy
+models/player/custom_player/lol/jhin/jhin.vvd
+
+// SKIN NORMAL
+models/player/custom_player/lol/jhin_norm/jhin.dx90.vtx
+models/player/custom_player/lol/jhin_norm/jhin.mdl
+models/player/custom_player/lol/jhin_norm/jhin.phy
+models/player/custom_player/lol/jhin_norm/jhin.vvd
+
+// ARM
+models/player/custom_player/lol/jhin/jhinf_arms.dx90.vtx
+models/player/custom_player/lol/jhin/jhinf_arms.mdl
+models/player/custom_player/lol/jhin/jhinf_arms.vvd
+
+// MATERIALS
+materials/models\lol\jhinf\jhin_base_tx_cm.vmt
+materials/models\lol\jhinf\jhin_base_tx_cm.vtf
+
+// Donald Trump ported by Kuristaja (kuristaja08@luukku.com)
+
+materials/models/player/kuristaja/trump/trump_eyes.vmt
+materials/models/player/kuristaja/trump/trump_eyes.vtf
+materials/models/player/kuristaja/trump/trump_eyes_normal.vtf
+materials/models/player/kuristaja/trump/trump_hair.vmt
+materials/models/player/kuristaja/trump/trump_hair.vtf
+materials/models/player/kuristaja/trump/trump_hair_normal.vtf
+materials/models/player/kuristaja/trump/trump_hands.vmt
+materials/models/player/kuristaja/trump/trump_head.vmt
+materials/models/player/kuristaja/trump/trump_jacket.vmt
+materials/models/player/kuristaja/trump/trump_pants.vmt
+materials/models/player/kuristaja/trump/trump_shoes.vmt
+materials/models/player/kuristaja/trump/trump_skin.vtf
+materials/models/player/kuristaja/trump/trump_skin_normal.vtf
+materials/models/player/kuristaja/trump/trump_suit.vtf
+materials/models/player/kuristaja/trump/trump_suit_normal.vtf
+
+// Player model
+models/player/custom_player/kuristaja/trump/trump.dx90.vtx
+models/player/custom_player/kuristaja/trump/trump.mdl
+models/player/custom_player/kuristaja/trump/trump.phy
+models/player/custom_player/kuristaja/trump/trump.vvd
+
+// Arms model
+models/player/custom_player/kuristaja/trump/trump_arms.dx90.vtx
+models/player/custom_player/kuristaja/trump/trump_arms.mdl
+models/player/custom_player/kuristaja/trump/trump_arms.vvd

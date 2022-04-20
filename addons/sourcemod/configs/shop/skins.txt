@@ -1,0 +1,41 @@
+"Skins"
+{
+    "delay_before_set_spawn" "1.0"
+
+	"skin1"	// Идентификатор в бд
+	{
+		"name"	"Jhin"	// Название скинов
+		"description"	"Jhin"	// Описание скинов
+		"ModelT"        "models/player/custom_player/lol/jhin_norm/jhin.mdl" // Путь до модели террориста  
+		"ModelT_Arms"   "models/player/custom_player/lol/jhin/jhinf_arms.mdl" // Путь до модели рук террориста 
+		"ModelCT"       "models/player/custom_player/lol/jhin_norm/jhin.mdl" // Путь до модели спецназа 
+		"ModelCT_Arms"  "models/player/custom_player/lol/jhin/jhinf_arms.mdl" // Путь до модели рук спецназа 
+		"price"			"20000"	// Стоимость в кредитах
+		//"gold_price"	"20"    // Стоимость предмета за золото
+		"sell_price"	"10"	// Продаваемая цена или -1, чтобы сделать не продаваемым.
+		//"gold_sell_price"	"5" // Продаваемая  цена за золото
+		"color"			"255 255 255 255"	// Цвет скина		
+		"preview_anim"  "default" // Анимация скина в режиме превью
+		"hide"			"0" // Скрывать ли скин
+		"luckchance"	"10" // Шанс выпадение предмета
+		"duration"		"0"	// Длительность использования скина
+	}
+	"skin2"	// Идентификатор в бд
+	{
+		"name"	"Donald Trump"	// Название скинов
+		"description"	"Donald Trump"	// Описание скинов
+		"ModelT"        "models/player/custom_player/kuristaja/trump/trump.mdl" // Путь до модели террориста  
+		"ModelT_Arms"   "models/player/custom_player/kuristaja/trump/trump_arms.mdl" // Путь до модели рук террориста 
+		"ModelCT"       "models/player/custom_player/kuristaja/trump/trump.mdl" // Путь до модели спецназа 
+		"ModelCT_Arms"  "models/player/custom_player/kuristaja/trump/trump_arms.mdl" // Путь до модели рук спецназа 
+		"price"			"20000"	// Стоимость в кредитах
+		//"gold_price"	"20"    // Стоимость предмета за золото
+		"sell_price"	"10"	// Продаваемая цена или -1, чтобы сделать не продаваемым.
+		//"gold_sell_price"	"5" // Продаваемая  цена за золото
+		"color"			"255 255 255 255"	// Цвет скина		
+		"preview_anim"  "default" // Анимация скина в режиме превью
+		"hide"			"0" // Скрывать ли скин
+		"luckchance"	"10" // Шанс выпадение предмета
+		"duration"		"0"	// Длительность использования скина
+	}
+}

@@ -1,0 +1,520 @@
+"Phrases"
+{
+	"NoAccessToCommand"
+	{
+		"en"		"{green}[Shop]{default} You have no access to this command!"
+	}
+
+	"TargetNotFound"
+	{
+		"#format"   "{1:s}"
+		"en"		"{green}[Shop]{default} Target {green}{1}{default} not found!"
+	}
+
+	"select_target"
+	{
+		"en"		"Select player:"
+	}
+
+	"select_category"
+	{
+		"en"		"Select category:"
+	}
+
+	"select_item"
+	{
+		"en"		"Select item:"
+	}
+
+	"no_targets"
+	{
+		"en"		"{green}[Shop]{default} No appropriate targets!"
+	}
+
+	"target_left_game"
+	{
+		"en"		"{green}[Shop]{default} Player has left the game!"
+	}
+
+	"trans_credits_operation"
+	{
+		"en"		"Type amount of credits to transfer in the chat\nor \"cancel\" to cancel the operation!"
+	}
+
+	"TransferSuccess"
+	{
+		"#format"   "{1:i},{2:N}"
+		"en"		"{green}[Shop]{default} You have successfully sent {green}{1}{default} credits to {green}{2}{default}!"
+	}
+
+	"ReceiveSuccess"
+	{
+		"#format"   "{1:i},{2:N}"
+		"en"		"{green}[Shop]{default} You have successfully received {green}{1}{default} credits from {green}{2}{default}!"
+	}
+
+	"ReceiveCommission"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[Shop]{default} Withholding fee: {green}{1} {default}credits"
+	}
+
+	"receive_item"
+	{
+		"#format"   "{1:N},{2:s},{3:s}"
+		"en"		"{green}[Shop]{default} You have received {green}\"{3}\"{default} to the category {green}\"{2}\"{default} from {green}{1}{default}!"
+	}
+
+	"already_has"
+	{
+		"#format"   "{1:N}"
+		"en"		"{green}[Shop]{default} Player {green}{1}{default} already has the item!"
+	}
+
+	"no_item"
+	{
+		"en"		"{green}[Shop]{default} The item isn't exists in your inventory!"
+	}
+
+	"IncorrectCredits"
+	{
+		"en"		"Not faithful amount of credits!"
+	}
+
+	"credits_being_transfered"
+	{
+		"#format"   "{1:i}"
+		"en"		"Amount of credits: {1}"
+	}
+
+	"credits_to_transfer"
+	{
+		"#format"   "{1:i}"
+		"en"		"Being sent: {1}"
+	}
+
+	"credits_to_transfer_price"
+	{
+		"#format"   "{1:i}"
+		"en"		"Transfer cost: {1}"
+	}
+
+	"credits_to_transfer_commission"
+	{
+		"#format"   "{1:i}"
+		"en"		"Commission : {1} credits"
+	}
+
+	"transfer_credits_left"
+	{
+		"#format"   "{1:i}"
+		"en"		"Remain: {1}"
+	}
+
+	"need_positive"
+	{
+		"#format"   "{1:i}"
+		"en"		"Need at least {1} credits"
+	}
+
+	"confirm"
+	{
+		"en"		"Confirm"
+	}
+
+	"cancel"
+	{
+		"en"		"Cancel"
+	}
+
+	"transfer"
+	{
+		"en"		"Transfer"
+	}
+
+	"ItemTransferMenu"
+	{
+		"en"		"Transfer item"
+	}
+
+	"ItemTransferMenu2"
+	{
+		"#format"   "{1:N}"
+		"en"		"Transfer item\nto {1}"
+	}
+
+	"give_credits"
+	{
+		"en"		"Give credits"
+	}
+
+	"take_credits"
+	{
+		"en"		"Take credits"
+	}
+
+	"set_credits"
+	{
+		"en"		"Set credits"
+	}
+
+	"give_items"
+	{
+		"en"		"Give items"
+	}
+
+	"take_items"
+	{
+		"en"		"Take items"
+	}
+
+	"give_item_success"
+	{
+		"en"		"{green}[Shop]{default} You have successfuly gave the item!"
+	}
+
+	"take_item_success"
+	{
+		"en"		"{green}[Shop]{default} You have successfuly took the item!"
+	}
+
+	"give_credits_success"
+	{
+		"#format"   "{1:i},{2:s}"
+		"en"		"{green}[Shop]{default} You have sent {1} credits to {green}{2}{default}!"
+	}
+
+	"remove_credits_success"
+	{
+		"#format"   "{1:i},{2:s}"
+		"en"		"{green}[Shop]{default} You have took {1} credits from {green}{2}{default}!"
+	}
+
+	"set_credits_success"
+	{
+		"#format"   "{1:i},{2:s}"
+		"en"		"{green}[Shop]{default} You have set {1} credits to {green}{2}{default}!"
+	}
+
+	"set_you_credits"
+	{
+		"#format"   "{1:i}"
+		"en"		"{green}[Shop]{default} Admin has set your credits to {green}{1}{default}!"
+	}
+
+	"take_you_credits"
+	{
+		"#format"   "{1:i}"
+		"en"		"{green}[Shop]{default} Admin has took {green}{1}{default} credits!"
+	}
+
+	"give_you_credits"
+	{
+		"#format"   "{1:i}"
+		"en"		"{green}[Shop]{default} Admin has gave you {green}{1}{default} credits!"
+	}
+
+	"EmptyInventory"
+	{
+		"en"		"{green}[Shop]{default} Your inventory is empty!"
+	}
+
+	"EmptyShop"
+	{
+		"en"		"{green}[Shop]{default} Shop is empty!"
+	}
+
+	"EmptyCategory"
+	{
+		"en"		"{green}[Shop]{default} The category is empty!"
+	}
+
+	"NothingToLuck"
+	{
+		"en"		"{green}[Shop]{default} There is nothing that you can luck!"
+	}
+
+	"Looser"
+	{
+		"en"		"{green}[Shop]{default} No luck! You have got nothing :("
+	}
+
+	"Lucker"
+	{
+		"#format"   "{1:s},{2:s}"
+		"en"		"{green}[Shop]{default} You have a lucky day :). You have got {green}\"{2}\"{default} to the category {green}\"{1}\"{default}."
+	}
+
+	"ItemElapsed"
+	{
+		"#format"   "{1:s},{2:s}"
+		"en"		"{green}[Shop]{default} Item {green}\"{2}\"{default} from category {green}\"{1}\"{default} has been elapsed!"
+	}
+
+	"trans_credits"
+	{
+		"en"		"Transfer credits"
+	}
+
+	"trans_credits_commision"
+	{
+		"#format"   "{1:i}"
+		"en"		"[Commission: {1}%%]"
+	}
+
+	"trans_credits_cost"
+	{
+		"#format"   "{1:i}"
+		"en"		"[Price: {1}]"
+	}
+
+	"trans_credits_disabled"
+	{
+		"en"		"[Disabled]"
+	}
+
+	"luck_disabled"
+	{
+		"en"		"[Disabled]"
+	}
+
+	"try_luck"
+	{
+		"en"		"Try a luck"
+	}
+
+	"luck_credits_chance"
+	{
+		"#format"   "{1:i},{2:i}"
+		"en"		"[Chance: {2}%%|Price: {1}]"
+	}
+
+	"Type"
+	{
+		"en"		"Type"
+	}
+
+	"None"
+	{
+		"en"		"None"
+	}
+
+	"Finite"
+	{
+		"en"		"Finite"
+	}
+
+	"Togglable"
+	{
+		"en"		"Togglable"
+	}
+
+	"BuyOnly"
+	{
+		"en"		"Buy only"
+	}
+
+	"Price"
+	{
+		"en"		"Price"
+	}
+
+	"Sell Price"
+	{
+		"en"		"Sell price"
+	}
+
+	"absolute_sellprice"
+	{
+		"en"		"Timeleft's price"
+	}
+
+	"Free"
+	{
+		"en"		"Free"
+	}
+
+	"Unsaleable"
+	{
+		"en"		"Unsaleable"
+	}
+
+	"Count"
+	{
+		"en"		"Count"
+	}
+
+	"duration"
+	{
+		"en"		"Duration"
+	}
+
+	"forever"
+	{
+		"en"		"Forever"
+	}
+
+	"timeleft"
+	{
+		"en"		"Timeleft"
+	}
+
+	"You have"
+	{
+		"en"		"You have"
+	}
+
+	"MainMenuTitle"
+	{
+		"en"		"Shop"
+	}
+
+	"Shop"
+	{
+		"en"		"Shop"
+	}
+
+	"credits"
+	{
+		"#format"   "{1:i}"
+		"en"		"Credits: {1}"
+	}
+
+	"buy"
+	{
+		"en"		"Buy"
+	}
+
+	"buy_not"
+	{
+		"en"		"Buy [Insufficient credits]"
+	}
+
+	"sell"
+	{
+		"en"		"Sell"
+	}
+
+	"inventory"
+	{
+		"en"		"Inventory"
+	}
+
+	"use"
+	{
+		"en"		"Use"
+	}
+
+	"ToggleOn"
+	{
+		"en"		"Toggle On"
+	}
+
+	"ToggleOff"
+	{
+		"en"		"Toggle Off"
+	}
+
+	"preview"
+	{
+		"en"		"Preview"
+	}
+
+	"preview_unavailable"
+	{
+		"en"		"Preview unavailable"
+	}
+
+	"functions"
+	{
+		"en"		"Functions"
+	}
+
+	"info"
+	{
+		"en"		"Info"
+	}
+
+	"admin_panel"
+	{
+		"en"		"Admin panel"
+	}
+
+	"Back"
+	{
+		"en"		"Back"
+	}
+
+	"Exit"
+	{
+		"en"		"Exit"
+	}
+	
+	"NotEnoughCredits"
+	{
+		"en"		"{green}[Shop] {default}Insufficient credits!"
+	}
+
+	"PreviewIn"
+	{
+		"#format"   "{1:i}"
+		"en"		"{green}[Shop] {default}Preview will be available in {1} sec.!"
+	}
+
+	"DataLoaded"
+	{
+		"#format"   "{1:s}"
+		"en"		"{green}[Shop] {default}You data of the shop has been loaded! Type {green}!{1}{default} to open the shop!"
+	}
+
+	"DataLoaded2"
+	{
+		"en"		"{green}[Shop] {default}You data of the shop has been loaded!"
+	}
+
+	"DataLoading"
+	{
+		"en"		"{green}[Shop] {default}Your data is being loaded!"
+	}
+
+	"You Buy Sure"
+	{
+		"en"		"Are you sure to purchase this item?"
+	}
+
+	"You Sell Sure"
+	{
+		"en"		"Are you sure to sell this item?"
+	}
+
+	"confirm_luck"
+	{
+		"#format"	"{1:i}"
+		"en"		"Are you sure to spend {1} credits for Try a Luck?"
+	}
+
+	"y."
+	{
+		"en"		"y."
+	}
+
+	"d."
+	{
+		"en"		"d."
+	}
+
+	"h."
+	{
+		"en"		"h."
+	}
+
+	"m."
+	{
+		"en"		"min."
+	}
+
+	"s."
+	{
+		"en"		"sec."
+	}
+}

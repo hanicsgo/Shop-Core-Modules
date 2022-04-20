@@ -1,0 +1,8 @@
+﻿"Phrases"
+{
+	"credits_gain"
+	{
+        "#format"       "{1:i}"
+		"en"			"{green}[Shop]{default} You have received {green}{1}{default} Credits. You can use this command type {green}!shop{default}"
+	}
+}

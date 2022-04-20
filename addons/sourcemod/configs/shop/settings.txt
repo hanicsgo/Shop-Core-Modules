@@ -1,0 +1,29 @@
+"Settings"
+{
+	"db_prefix"	"shop_"	// Tables prefix in database
+	
+	"Commands"	// Used commands
+	{
+		// Admin commands
+		"Give_Credits"		"sm_givecredits"	// Admin command for giving credits to player
+		"Take_Credits"		"sm_takecredits"	// Admin command for taking credits from player
+		"Set_Credits"		"sm_setcredits"		// Admin command for setting fixed amount of credits to player
+		
+		// Player commands
+		"Main_Menu"	"sm_shop"	// Command for shop menu opening, use 'comma' to multiple commands
+	}
+	
+	"Count_Menu"	// Menu with amount of credits for giving/setting/taking
+	{
+		// "Amount"		"Text name"
+		"0"				"0 amount"
+		"1"				"1 amount"
+		"10"			"10 amount"
+		"100"			"Hundred"
+		"1000"			"Thousand"
+		"10000"			"10K"
+		"100000"		"100K"
+		"1000000"		"1M"
+		// "etc"		"etc"
+	}
+}
