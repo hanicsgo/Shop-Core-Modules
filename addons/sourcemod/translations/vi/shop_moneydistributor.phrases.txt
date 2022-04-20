@@ -3,6 +3,6 @@
 	"credits_gain"
 	{
         "#format"       "{1:i}"
-		"vi"			"{green}[Shop]{default} Bạn đã nhận được {green}{1}{default} Credits. Bạn có thể sử dụng nó và sử dụng lệnh {green}!shopee{default} ở dòng chat!"
+		"vi"			"{green}[Shop]{default} Bạn đã nhận được {green}{1}{default} Credits. Bạn có thể sử dụng nó và sử dụng lệnh {green}!shop{default} ở dòng chat!"
 	}
 }
