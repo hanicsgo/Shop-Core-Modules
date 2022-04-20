@@ -1,0 +1,15 @@
+"Phrases"
+{
+	"NeedTag"
+	{
+		"#format"	"{1:s}"
+		"vi"		"{green}[Shop]{default} Hãy đặt nametag {green}{1}{default} để nhận được credits!"
+		"en"		"{green}[Shop]{default} Put nametag {1} {purple}in your name to have credis!"
+	}
+	"HaveTag"
+	{
+		"#format"	"{1:i},{2:s}"
+		"en"		"{green}[Shop]{default} You have received {1} credits for rename {green}{2}{default}!"
+		"vi"		"{green}[Shop]{default} Bạn vừa nhận được {1} Credits vì rename {green}{2}{default}!"
+	}
+}
