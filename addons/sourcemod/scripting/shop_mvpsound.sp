@@ -53,13 +53,6 @@ public OnMapStart()
 		FormatEx(buffer, sizeof(buffer), "sound/%s", g_sSound[i]);
 		AddFileToDownloadsTable(buffer);
 	}
-	
-	Shop_GetCfgFile(buffer, sizeof(buffer), "mvp.cfg");
-	
-	if (!File_ReadDownloadList(buffer))
-	{
-		PrintToServer("File not exists %s", buffer);
-	}
 }
 
 public void Shop_Started()
@@ -67,7 +60,7 @@ public void Shop_Started()
 	new CategoryId:category_id = Shop_RegisterCategory(CATEGORY, "MVP", "");
 	
 	decl String:_buffer[PLATFORM_MAX_PATH];
-	Shop_GetCfgFile(_buffer, sizeof(_buffer), "mvp.cfg");
+	Shop_GetCfgFile(Path_SM, buffer, sizeof(_buffer), "configs/shop/mvp.cfg");
 	
 	if (kv != INVALID_HANDLE) CloseHandle(kv);
 	
@@ -291,12 +284,12 @@ stock Array_FindString(const String:array[][], size, const String:str[], bool:ca
 	return -1;
 }
 
-public void MVPSounds_Reset()
+public void ShopAction_Reset()
 {
 	g_iCount = 0;
 }
 
-public bool MVPSounds_Config(KeyValues &kv, int itemid)
+public bool ShopAction_Config(KeyValues &kv, int itemid)
 {
 	Shop_GetItemId(itemid, g_iCount);
 
@@ -322,16 +315,9 @@ public bool MVPSounds_Config(KeyValues &kv, int itemid)
 	return true;
 }
 
-public int MVPSounds_Equip(int client, CategoryId category_id, const char[] category, ItemId item_id, const char[] item);
+public ShopAction_OnEquipItem(client, CategoryId:category_id, const String:category[], ItemId:item_id, const String:item[], bool:isOn, bool:elapsed)
 {
 	g_iEquipt[client] = Shop_GetItemId(itemid);
-
-	return 0;
-}
-
-public int MVPSounds_Remove(int client, CategoryId category_id, const char[] category, ItemId item_id, const char[] item);
-{
-	g_iEquipt[client] = -1;
 
 	return 0;
 }
