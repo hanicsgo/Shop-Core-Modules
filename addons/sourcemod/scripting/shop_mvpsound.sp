@@ -298,7 +298,7 @@ public void MVPSounds_Reset()
 
 public bool MVPSounds_Config(KeyValues &kv, int itemid)
 {
-	Store_SetDataIndex(itemid, g_iCount);
+	Shop_GetItemId(itemid, g_iCount);
 
 	kv.GetString("sound", g_sSound[g_iCount], PLATFORM_MAX_PATH);
 
