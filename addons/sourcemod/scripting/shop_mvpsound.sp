@@ -342,7 +342,7 @@ public void Event_RoundMVP(Event event, char[] name, bool dontBroadcast)
 		EmitSoundToClient(i, g_sSound[g_iEquipt[client]], SOUND_FROM_PLAYER, SNDCHAN_STATIC, SNDLEVEL_NONE, _, g_fVolume[g_iEquipt[client]]);
 	}
 }
-public void Shop_SetCallbacks(int client, CategoryId category_id, const char[] category, ItemId item_id, const char[] item)
+public void Shop_OnPreviewItem(int client, CategoryId category_id, const char[] category, ItemId item_id, const char[] item)
 {
 	if (!StrEqual(type, "mvp_sound"))
 		return;
