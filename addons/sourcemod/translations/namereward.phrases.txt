@@ -10,6 +10,6 @@
 	{
 		"#format"	"{1:i},{2:s}"
 		"en"		"{green}[Shop]{default} You have received {1} credits for rename {green}{2}{default}!"
-		"vi"		"{green}[Shop]{default} Bạn vừa nhận được {1} Credits vì rename {green}{2}{default}!"
+		"vi"		"{green}[Shop]{default} Bạn vừa nhận được {1} credits vì rename {green}{2}{default}!"
 	}
 }
