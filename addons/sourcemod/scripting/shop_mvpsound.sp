@@ -282,12 +282,12 @@ stock Array_FindString(const String:array[][], size, const String:str[], bool:ca
 	return -1;
 }
 
-public void ShopAction_Reset()
+public void Shop_Reset()
 {
 	g_iCount = 0;
 }
 
-public bool ShopAction_Config(KeyValues &kv, int itemid)
+public bool Shop_Config(KeyValues &kv, int itemid)
 {
 	Shop_GetItemId(itemid, g_iCount);
 
