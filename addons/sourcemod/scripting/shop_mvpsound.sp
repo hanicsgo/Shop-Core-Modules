@@ -10,8 +10,8 @@
 new Handle:kv;
 new ItemId:selected_id[MAXPLAYERS+1] = {INVALID_ITEM, ...};
 
-char g_sSound[SHOP_MAX_ITEMS][PLATFORM_MAX_PATH];
-float g_fVolume[SHOP_MAX_ITEMS];
+char g_sSound[SHOP_MAX_STRING_LENGTH][PLATFORM_MAX_PATH];
+float g_fVolume[SHOP_MAX_STRING_LENGTH];
 int g_iEquipt[MAXPLAYERS + 1] = -1;
 
 char g_sChatPrefix[128];
@@ -40,7 +40,7 @@ public void OnPluginStart()
 
 public void OnClientDisconnect(int iClient)
 {
-	selected_id[client] = INVALID_ITEM;
+	selected_id[iClient] = INVALID_ITEM;
 }
 
 public OnMapStart()
@@ -50,17 +50,17 @@ public OnMapStart()
 	for (int i = 0; i < g_iCount; i++)
 	{
 		PrecacheSound(g_sSound[i], true);
-		FormatEx(buffer, sizeof(buffer), "sound/%s", g_sSound[i]);
-		AddFileToDownloadsTable(buffer);
+		FormatEx(sBuffer, sizeof(sBuffer), "sound/%s", g_sSound[i]);
+		AddFileToDownloadsTable(sBuffer);
 	}
 }
 
 public void Shop_Started()
 {
-	new CategoryId:category_id = Shop_RegisterCategory(CATEGORY, "MVP", "");
+	new CategoryId:category_id = Shop_RegisterCategory("MVP", "");
 	
 	decl String:_buffer[PLATFORM_MAX_PATH];
-	Shop_GetCfgFile(Path_SM, buffer, sizeof(_buffer), "configs/shop/mvp.cfg");
+	Shop_GetCfgFile(_buffer, sizeof(_buffer), "configs/shop/mvp.cfg");
 	
 	if (kv != INVALID_HANDLE) CloseHandle(kv);
 	
@@ -110,8 +110,6 @@ public ShopAction:OnEquipItem(client, CategoryId:category_id, const String:categ
 	Shop_ToggleClientCategoryOff(client, category_id);
 	
 	selected_id[client] = item_id;
-	
-	ProcessPlayer(client);
 	
 	return Shop_UseOn;
 }
@@ -321,12 +319,6 @@ public ShopAction_OnEquipItem(client, CategoryId:category_id, const String:categ
 
 	return 0;
 }
-
-public void OnClientDisconnect(int client)
-{
-	g_iEquipt[client] = -1;
-}
-
 
 public void Event_RoundMVP(Event event, char[] name, bool dontBroadcast)
 {
