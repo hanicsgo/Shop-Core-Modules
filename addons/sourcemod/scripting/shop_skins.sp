@@ -5,7 +5,6 @@
 #include <cstrike>
 #include <shop>
 
-#define PLUGIN_VERSION "2.1.3"
 
 #define CATEGORY	"skins"
 
@@ -17,9 +16,9 @@ new Handle:hArrayModels;
 public Plugin:myinfo =
 {
 	name = "[Shop] Skins",
-	author = "FrozDark",
+	author = "FrozDark, hani from anhemyenbai",
 	description = "Adds ability to buy skins",
-	version = SHOP_VERSION,
+	version = "2.1.3fix",
 	url = "www.hlmod.ru"
 }
 
