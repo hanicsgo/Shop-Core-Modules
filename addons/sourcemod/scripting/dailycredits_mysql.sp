@@ -3,9 +3,11 @@
 #include <sourcemod>
 #include <sdktools>
 #include <shop>
-#include <csgocolors>
+#include <colors>
 
 #pragma newdecls required
+
+#define PLUGIN_VERSION "1.0fix"
 
 Database db;
 ConVar g_hDailyEnable;
@@ -21,8 +23,8 @@ public Plugin myinfo =
 {
 	name = "Daily Credits mysql to Shop core",
 	author = "Simon & Nachtfrische, Snooze, hani from anhemyenbai",
-	description = "Daily Credits",
-	version = "1.0,
+	description = "PLUGIN_VERSION",
+	version = "1.0",
 	url = "http://www.sourcemod.net, http://hlmod.ru"
 };
 
