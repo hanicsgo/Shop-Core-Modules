@@ -52,20 +52,8 @@ public Shop_Started()
 {
 	new CategoryId:category_id = Shop_RegisterCategory(CATEGORY, "Custom Weapons", "");
 	
-	decl String:_buffer[PLATFORM_MAX_PATH];
-	Shop_GetCfgFile(_buffer, sizeof(_buffer), "weapons.txt");
-	
-	if (kv != INVALID_HANDLE) CloseHandle(kv);
-	
-	kv = CreateKeyValues("Weapons");
-	
-	if (!FileToKeyValues(kv, _buffer))
-	{
-		ThrowError("\"%s\" not parsed", _buffer);
-	}
-	
+	decl String:buffer[PLATFORM_MAX_PATH];
 	ClearArray(hArrayWeapons);
-	
 	KvRewind(kv);
 	decl String:item[64], String:item_name[64], String:desc[64];
 	if (KvGotoFirstSubKey(kv))
@@ -74,26 +62,26 @@ public Shop_Started()
 		{
 			if (!KvGetSectionName(kv, item, sizeof(item))) continue;
 			
-			KvGetString(kv, "ModelT", _buffer, sizeof(_buffer));
+			KvGetString(kv, "ModelT", buffer, sizeof(buffer));
 			new bool:result = false;
-			if (_buffer[0])
+			if (buffer[0])
 			{
-				PrecacheModel(_buffer);
-				if (FindStringInArray(hArrayWeapons, _buffer) == -1)
+				PrecacheModel(buffer);
+				if (FindStringInArray(hArrayWeapons, buffer) == -1)
 				{
-					PushArrayString(hArrayWeapons, _buffer);
+					PushArrayString(hArrayWeapons, buffer);
 				}
 				result = true;
 			}
 			
 			
-			KvGetString(kv, "ModelCT", _buffer, sizeof(_buffer));
-			if (_buffer[0])
+			KvGetString(kv, "ModelCT", buffer, sizeof(buffer));
+			if (buffer[0])
 			{
-				PrecacheModel(_buffer, true);
-				if (FindStringInArray(hArrayWeapons, _buffer) == -1)
+				PrecacheModel(buffer, true);
+				if (FindStringInArray(hArrayWeapons, buffer) == -1)
 				{
-					PushArrayString(hArrayWeapons, _buffer);
+					PushArrayString(hArrayWeapons, buffer);
 				}
 			}
 			else if (!result) continue;
