@@ -23,8 +23,8 @@ public Plugin myinfo =
 {
 	name = "Daily Credits mysql to Shop core",
 	author = "Simon & Nachtfrische, Snooze, hani from anhemyenbai",
-	description = "PLUGIN_VERSION",
-	version = "1.0",
+	description = "Daily Credits Mysql To Shop Core",
+	version = "PLUGIN_VERSION",
 	url = "http://www.sourcemod.net, http://hlmod.ru"
 };
 
