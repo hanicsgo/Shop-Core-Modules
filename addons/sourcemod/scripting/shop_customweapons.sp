@@ -6,7 +6,6 @@
 #include <cstrike>
 
 #define CATEGORY	"weapons"
-#define DATA "1.0"
 
 char sConfig[PLATFORM_MAX_PATH];
 Handle kv, hArrayWeapons, menu_cw;
@@ -23,7 +22,7 @@ public Plugin myinfo =
 	name = "Shop - Custom Weapons Menu",
 	author = "hani and chiizu from FPT University",
 	description = "Shop dung cho retake 32",
-	version = "DATA",
+	version = "1.0",
 	url = "http://steamcommunity.com/id/hanicsgo",
 }
 
