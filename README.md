@@ -29,4 +29,5 @@ For SQLite usage, **shop supports MySQL and recommended to use**
 - Name tag, name and message color ( by R1KO )
 - Skins ( by FrozDark )
 - MVP ( by Kento, shanapu, hani from anhemyenbai )
+- Custom Weapons ( by hani, chiizu from FPT University )
 
