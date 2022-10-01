@@ -6,6 +6,7 @@
 #include <cstrike>
 
 #define CATEGORY	"weapons"
+#define DATA "1.0"
 
 char sConfig[PLATFORM_MAX_PATH];
 Handle kv, hArrayWeapons, menu_cw;
@@ -26,25 +27,24 @@ public Plugin myinfo =
 	url = "http://steamcommunity.com/id/hanicsgo",
 }
 
-public OnPluginStart()
+public OnMapStart()
 {
 	HookEvent("player_spawn", Event_PlayerSpawn);
 	HookEvent("player_team", Event_PlayerSpawn);
 
-	decl String:buffer[PLATFORM_MAX_PATH];
-	for (new i = 0; i < GetArraySize(hArrayWeapons); i++)
-	{
-		GetArrayString(hArrayWeapons, i, buffer, sizeof(buffer));
-		PrecacheModel(buffer, true);
-	}
-	
-	Shop_GetCfgFile(buffer, sizeof(buffer), "weapons_downloads.cfg");
-	
-	if (kv != INVALID_HANDLE) CloseHandle(kv);
-	kv = CreateKeyValues("CustomModels");
-	if (!FileToKeyValues(kv, buffer)) SetFailState("File does not exists %s", buffer);
-	hArrayWeapons = CreateArray(ByteCountToCells(PLATFORM_MAX_PATH));
-	if (Shop_IsStarted()) Shop_Started();
+decl String:buffer[PLATFORM_MAX_PATH];
+    for (new i = 0; i < GetArraySize(hArrayWeapons); i++)
+    {
+        GetArrayString(hArrayWeapons, i, buffer, sizeof(buffer));
+        PrecacheModel(buffer, true);
+    }
+    
+    Shop_GetCfgFile(buffer, sizeof(buffer), "weapons_downloads.cfg");
+    
+    if (kv != INVALID_HANDLE) CloseHandle(kv);
+    kv = CreateKeyValues("CustomModels");
+    if (!FileToKeyValues(kv, buffer)) SetFailState("File does not exists %s", buffer);
+    hArrayWeapons = CreateArray(ByteCountToCells(PLATFORM_MAX_PATH));
 }
 
 public Shop_Started()
@@ -52,6 +52,7 @@ public Shop_Started()
 	new CategoryId:category_id = Shop_RegisterCategory(CATEGORY, "Custom Weapons", "");
 	
 	decl String:buffer[PLATFORM_MAX_PATH];
+	Shop_GetCfgFile(buffer, sizeof(buffer), "weapons.cfg");
 	ClearArray(hArrayWeapons);
 	KvRewind(kv);
 	decl String:item[64], String:item_name[64], String:desc[64];
