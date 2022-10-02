@@ -52,7 +52,7 @@ public OnMapStart()
 		PrecacheModel(buffer, true);
 	}
 	
-	Shop_GetCfgFile(buffer, sizeof(buffer), "weapons_downloads.cfg");
+	Shop_GetCfgFile(buffer, sizeof(buffer), "weapons_downloads.txt");
 	
 	if (kv != INVALID_HANDLE) CloseHandle(kv);
 	kv = CreateKeyValues("CustomModels");
