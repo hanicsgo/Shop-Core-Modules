@@ -114,7 +114,7 @@ public Shop_Started()
 				
 				if (KvJumpToKey(kv, "Attributes", false))
 				{
-					Shop_KvCopySubKeysCustomInfo(kv);
+					Shop_KvCopySubKeysCustomInfo(view_as<KeyValues>(kv));
 					KvGoBack(kv);
 				}
 				
