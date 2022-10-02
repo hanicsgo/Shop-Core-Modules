@@ -173,7 +173,7 @@ public void OnPluginStart()
 	// Generate Paths
 	BuildPath(Path_SM, Config, sizeof(Config)				, "configs/shop/CustomWeapons.ini");
 	BuildPath(Path_SM, DownloadList, sizeof(DownloadList)	, "configs/shop/CustomWeapons_downloads.txt");
-	BuildPath(Path_SM, global_sConfig, sizeof(global_sConfig), "configs/UCW");
+	BuildPath(Path_SM, global_sConfig, sizeof(global_sConfig), "configs/CustomWeapons");
 	if (!DirExists(global_sConfig))CreateDirectory(global_sConfig, 0x0265);
 	
 	// Checking load Shop Core
