@@ -1,0 +1,44 @@
+﻿"Phrases"
+{
+	"prefix"
+	{
+		"en"		"{PURPLE}[Custom Weapon] {DEFAULT}"
+	}
+	
+	"display"
+	{
+		"en"		"Custom Weapons"
+	}
+	
+	"desc"
+	{
+		"en"		""
+	}
+	
+	"preview"
+	{
+		"#format"	"{1:i}"
+		"en"		"Preview will end in {GREEN}{1} {DEFAULT}seconds."
+	}
+	
+	"preview_err1"
+	{
+		"en"		"You must be alive to use the preview!"
+	}
+	
+	"preview_err2"
+	{
+		"#format"	"{1:i}"
+		"en"		"Wait {GREEN}{1} {DEFAULT}seconds to use the preview again."
+	}
+	
+	"preview_err3"
+	{
+		"en"		"The preview is disabled."
+	}
+	
+	"no_change_weapon"
+	{
+		"en"		"Changing the knife while using a custom knife is prohibited!"
+	}
+}
