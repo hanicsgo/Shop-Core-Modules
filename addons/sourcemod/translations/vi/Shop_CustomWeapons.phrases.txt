@@ -1,0 +1,44 @@
+﻿"Phrases"
+{
+	"prefix"
+	{
+		"vi"		"{PURPLE}[Custom Weapon] {DEFAULT}"
+	}
+	
+	"display"
+	{
+		"vi"		"Custom Weapons"
+	}
+	
+	"desc"
+	{
+		"vi"		""
+	}
+	
+	"preview"
+	{
+		"#format"	"{1:i}"
+		"vi"		"Xem trước sẽ kết thúc sau {GREEN}{1} {DEFAULT}giây."
+	}
+	
+	"preview_err1"
+	{
+		"vi"		"Bạn phải sống để sử dụng bản xem trước!"
+	}
+	
+	"preview_err2"
+	{
+		"#format"	"{1:i}"
+		"vi"		"Chờ {GREEN}{1} {DEFAULT}giây để sử dụng bản xem trước."
+	}
+	
+	"preview_err3"
+	{
+		"vi"		"Bản xem trước bị tắt."
+	}
+	
+	"no_change_weapon"
+	{
+		"vi"		"Cấm thay dao khi đang sử dụng dao tùy chỉnh!"
+	}
+}
