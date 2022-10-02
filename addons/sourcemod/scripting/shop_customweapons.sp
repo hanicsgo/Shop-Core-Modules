@@ -69,7 +69,7 @@ public Plugin myinfo =
 {
 	name = "[Shop] Ultimate Custom Weapons",
 	author = "MrQout, hani, chiizu from FPT University",
-	description = "Custom Weapons for Shop'a",
+	description = "Custom Weapons for Shop",
 	version = "1.0.4",
 	url = "steamcommunity.com/id/haniicsgo"
 };
