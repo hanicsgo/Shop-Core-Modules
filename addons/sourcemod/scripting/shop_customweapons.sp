@@ -1,3 +1,5 @@
+#pragma semicolon 1
+
 #include <sourcemod>
 #include <sdktools>
 #include <shop>
@@ -5,46 +7,63 @@
 #include <colors>
 #include <cstrike>
 
-#define CATEGORY	"weapons"
+#define CATEGORY	"Custom Weapons"
 #define DATA "1.0"
 
-char sConfig[PLATFORM_MAX_PATH];
-Handle kv, hArrayWeapons, menu_cw;
+Handle kv;
+Handle menu_cw;
 
-//Spawn Message Cvar
 new Handle:cvarcwmspawnmsg = INVALID_HANDLE;
 new ItemId:selected_id[MAXPLAYERS+1] = {INVALID_ITEM, ...};
 
 char client_w[MAXPLAYERS+1];
-int client_id[MAXPLAYERS+1];
+
+new Handle:hArrayWeapons;
 
 public Plugin myinfo =
 {
 	name = "Shop - Custom Weapons Menu",
 	author = "hani and chiizu from FPT University",
 	description = "Shop dung cho retake 32",
-	version = "1.0",
+	version = "DATA",
 	url = "http://steamcommunity.com/id/hanicsgo",
 }
 
-public OnMapStart()
+public OnPluginStart()
 {
 	HookEvent("player_spawn", Event_PlayerSpawn);
 	HookEvent("player_team", Event_PlayerSpawn);
 
-decl String:buffer[PLATFORM_MAX_PATH];
-    for (new i = 0; i < GetArraySize(hArrayWeapons); i++)
-    {
-        GetArrayString(hArrayWeapons, i, buffer, sizeof(buffer));
-        PrecacheModel(buffer, true);
-    }
-    
-    Shop_GetCfgFile(buffer, sizeof(buffer), "weapons_downloads.cfg");
-    
-    if (kv != INVALID_HANDLE) CloseHandle(kv);
-    kv = CreateKeyValues("CustomModels");
-    if (!FileToKeyValues(kv, buffer)) SetFailState("File does not exists %s", buffer);
-    hArrayWeapons = CreateArray(ByteCountToCells(PLATFORM_MAX_PATH));
+	hArrayWeapons = CreateArray(ByteCountToCells(PLATFORM_MAX_PATH));
+	if (Shop_IsStarted()) Shop_Started();
+}
+
+public OnPluginEnd()
+{
+	Shop_UnregisterMe();
+}
+
+public OnMapStart()
+{
+	decl String:buffer[PLATFORM_MAX_PATH];
+	for (new i = 0; i < GetArraySize(hArrayWeapons); i++)
+	{
+		GetArrayString(hArrayWeapons, i, buffer, sizeof(buffer));
+		PrecacheModel(buffer, true);
+	}
+	
+	Shop_GetCfgFile(buffer, sizeof(buffer), "weapons_downloads.cfg");
+	
+	if (kv != INVALID_HANDLE) CloseHandle(kv);
+	kv = CreateKeyValues("CustomModels");
+	if (!FileToKeyValues(kv, buffer)) SetFailState("File does not exists %s", buffer);
+	hArrayWeapons = CreateArray(ByteCountToCells(PLATFORM_MAX_PATH));
+	if (Shop_IsStarted()) Shop_Started();
+}
+
+public OnClientDisconnect_Post(client)
+{
+	selected_id[client] = INVALID_ITEM;
 }
 
 public Shop_Started()
@@ -126,17 +145,21 @@ public ShopAction:OnEquipItem(client, CategoryId:category_id, const String:categ
 	return Shop_UseOn;
 }
 
-public OnClientDisconnect(client)
+public Action:PlayerSpawn(Handle:event, const String:name[], bool:dontBroadcast)
 {
-	selected_id[client] = INVALID_ITEM;
-}
-
-
-public Action Command_cw(int client, int args)
-{	
-	SetMenuTitle(menu_cw, "Custom Weapons Menu v%s\n%T", DATA,"Select a weapon", client);
-	DisplayMenu(menu_cw, client, 0);
-	return Plugin_Handled;
+	// Get Client
+	new client = GetClientOfUserId(GetEventInt(event, "userid"));
+	
+	if (GetClientTeam(client) == 1 && !IsPlayerAlive(client))
+	{
+	return;
+	}
+	
+	// Check Convar & Spawnmsg
+	if (GetConVarInt(cvarcwmspawnmsg) == 1)
+	{	
+		CPrintToChat(client," \x04[Shop]\x01 %T","spawnmsg", client);
+	}
 }
 
 public Event_PlayerSpawn(Handle:event, const String:name[], bool:dontBroadcast)
@@ -151,6 +174,12 @@ ProcessPlayer(client)
 	{
 		return;
 	}
+}
+public Action Command_cw(int client, int args)
+{	
+	SetMenuTitle(menu_cw, "Custom Weapons Menu v%s\n%T", DATA,"Select a weapon", client);
+	DisplayMenu(menu_cw, client, 0);
+	return Plugin_Handled;
 }
 
 public int Menu_Handler(Menu menu, MenuAction action, int client, int param2)
@@ -278,9 +307,4 @@ stock bool HasPermission(int iClient, char[] flagString)
 
 	return false;
 } 
-
-public OnPluginEnd()
-{
-	Shop_UnregisterMe();
-}
 
