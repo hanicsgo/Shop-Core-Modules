@@ -6,6 +6,7 @@
 #include <fpvm_interface>
 #include <colors>
 #include <cstrike>
+#include <smlib>
 
 #define CATEGORY	"Custom Weapons"
 #define DATA "1.0"
@@ -54,11 +55,10 @@ public OnMapStart()
 	
 	Shop_GetCfgFile(buffer, sizeof(buffer), "weapons_downloads.txt");
 	
-	if (kv != INVALID_HANDLE) CloseHandle(kv);
-	kv = CreateKeyValues("CustomModels");
-	if (!FileToKeyValues(kv, buffer)) SetFailState("File does not exists %s", buffer);
-	hArrayWeapons = CreateArray(ByteCountToCells(PLATFORM_MAX_PATH));
-	if (Shop_IsStarted()) Shop_Started();
+	if (!File_ReadDownloadList(buffer))
+	{
+		PrintToServer("File not exists %s", buffer);
+	}
 }
 
 public OnClientDisconnect_Post(client)
@@ -72,8 +72,20 @@ public Shop_Started()
 	
 	decl String:buffer[PLATFORM_MAX_PATH];
 	Shop_GetCfgFile(buffer, sizeof(buffer), "weapons.cfg");
+		
+	if (kv != INVALID_HANDLE) CloseHandle(kv);
+	
+	kv = CreateKeyValues("CustomModels");
+	
+	if (!FileToKeyValues(kv, buffer))
+	{
+		ThrowError("\"%s\" not parsed", buffer);
+	}
+	
 	ClearArray(hArrayWeapons);
+
 	KvRewind(kv);
+
 	decl String:item[64], String:item_name[64], String:desc[64];
 	if (KvGotoFirstSubKey(kv))
 	{
