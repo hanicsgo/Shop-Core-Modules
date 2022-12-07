@@ -12,7 +12,7 @@ For SQLite usage, **shop supports MySQL and recommended to use**
 ```
 "shop"
 {
-        "driver"    "sqlite"
+        "driver"    "mysql"
         "database"  "shop_core"
 }
 ```
